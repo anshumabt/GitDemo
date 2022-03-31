@@ -1,0 +1,7 @@
+02:29:59.530 [main] INFO  INT.E2EProject.SmokeTest - Logged in successfully
+02:30:31.821 [main] INFO  INT.E2EProject.SmokeTest - New Cost Code is not added
+02:41:50.862 [main] INFO  INT.E2EProject.SmokeTest - ********Logger message********
+02:41:50.862 [main] FATAL INT.E2EProject.SmokeTest - *******Fatal message********
+02:41:50.862 [main] ERROR INT.E2EProject.SmokeTest - ********Error message********
+02:41:50.862 [main] DEBUG INT.E2EProject.SmokeTest - ********Debug message********
+02:41:56.037 [main] INFO  INT.E2EProject.SmokeTest - Logged in successfully
