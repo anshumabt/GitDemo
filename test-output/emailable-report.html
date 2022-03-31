@@ -9,22 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Smoke</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">149,919</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Costs</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,686</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">187,605</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Smoke</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">235,221</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Costs</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">7,759</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num attn">2</th><th class="num">0</th><th class="num attn">2</th><th class="num">242,980</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">INT.E2EProject.SmokeTest</td><td><a href="#m0">SOCreation</a></td><td rowspan="1">1648574279286</td><td rowspan="1">101782</td></tr><tr><th colspan="4">Smoke &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">INT.E2EProject.SmokeTest</td><td><a href="#m1">Navigation</a></td><td rowspan="1">1648574243630</td><td rowspan="1">35645</td></tr><tr class="passedeven"><td><a href="#m2">SignIn</a></td><td rowspan="1">1648574243458</td><td rowspan="1">166</td></tr><tr class="passedeven"><td><a href="#m3">logs</a></td><td rowspan="1">1648574381281</td><td rowspan="1">18</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Costs &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">INT.E2EProject.CostsTest</td><td><a href="#m4">SignIn</a></td><td rowspan="1">1648574386961</td><td rowspan="1">217</td></tr><tr class="passedeven"><td><a href="#m5">create</a></td><td rowspan="1">1648574387181</td><td rowspan="1">32467</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">INT.E2EProject.SmokeTest</td><td><a href="#m0">Navigation</a></td><td rowspan="1">1648693087018</td><td rowspan="1">117637</td></tr><tr class="failedeven"><td><a href="#m1">SOCreation</a></td><td rowspan="1">1648693205205</td><td rowspan="1">100205</td></tr><tr><th colspan="4">Smoke &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">INT.E2EProject.SmokeTest</td><td><a href="#m2">SignIn</a></td><td rowspan="1">1648693086721</td><td rowspan="1">290</td></tr><tr class="passedeven"><td><a href="#m3">logs</a></td><td rowspan="1">1648693305720</td><td rowspan="1">24</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Costs &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">INT.E2EProject.CostsTest</td><td><a href="#m4">setUp</a></td><td rowspan="1">1648693306857</td><td rowspan="1">7735</td></tr><tr><th colspan="4">Costs &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">INT.E2EProject.CostsTest</td><td><a href="#m5">DriverQuit</a></td><td rowspan="1">1648693314609</td><td rowspan="1">0</td></tr><tr><th colspan="4">Costs &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">INT.E2EProject.CostsTest</td><td><a href="#m6">SignIn</a></td><td rowspan="1">1648693314601</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m7">create</a></td><td rowspan="1">1648693314607</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Smoke</h2><h3 id="m0">INT.E2EProject.SmokeTest#SOCreation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=99.0.4844.82)
+<h2>Smoke</h2><h3 id="m0">INT.E2EProject.SmokeTest#Navigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[ng-reflect-message=&quot;Create&quot;]&quot;}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;LOVE&apos;, ip: &apos;192.168.29.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b14ce2c092182431f27cc4aafe55010c, clickElement {id=f0a1a8e1-2dca-41be-a8bd-14a3fecd3c32}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Anshuma\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63605}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63605/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b14ce2c092182431f27cc4aafe55010c)] -&gt; xpath: //table//tr[3]//td[2]//button]
-Session ID: b14ce2c092182431f27cc4aafe55010c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Anshuma\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62160}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62160/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d891b8d0c99de641fc3abaf1e06e5ce4
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -32,15 +31,66 @@ Session ID: b14ce2c092182431f27cc4aafe55010c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at INT.E2EProject.SmokeTest.SOCreation(SmokeTest.java:130)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageObejcts.Socreation.FAB(Socreation.java:35)
+	at INT.E2EProject.SmokeTest.Navigation(SmokeTest.java:120)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">INT.E2EProject.SmokeTest#Navigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">INT.E2EProject.SmokeTest#SOCreation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[ng-reflect-message=&quot;Create&quot;]&quot;}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;LOVE&apos;, ip: &apos;192.168.29.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Anshuma\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62160}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62160/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d891b8d0c99de641fc3abaf1e06e5ce4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageObejcts.Socreation.FAB(Socreation.java:35)
+	at INT.E2EProject.SmokeTest.SOCreation(SmokeTest.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">INT.E2EProject.SmokeTest#SignIn</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>anshuma-int</td><td>password@00</td><td>Correct user is loged in</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">INT.E2EProject.SmokeTest#logs</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Costs</h2><h3 id="m4">INT.E2EProject.CostsTest#SignIn</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>anshuma-int</td><td>password@00</td><td>Correct user is loged in</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">INT.E2EProject.CostsTest#create</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Costs</h2><h3 id="m4">INT.E2EProject.CostsTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: pageObejcts/Costs
+	at INT.E2EProject.CostsTest.setUp(CostsTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: pageObejcts.Costs
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 27 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">INT.E2EProject.CostsTest#DriverQuit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">INT.E2EProject.CostsTest#SignIn</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>anshuma-int</td><td>password@00</td><td>Correct user is loged in</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NoClassDefFoundError: pageObejcts/Costs
+	at INT.E2EProject.CostsTest.setUp(CostsTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: pageObejcts.Costs
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 27 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">INT.E2EProject.CostsTest#create</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: pageObejcts/Costs
+	at INT.E2EProject.CostsTest.setUp(CostsTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: pageObejcts.Costs
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 27 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

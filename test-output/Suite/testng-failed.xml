@@ -11,8 +11,21 @@
           <include name="DriverQuit"/>
           <include name="SOCreation"/>
           <include name="setUp"/>
+          <include name="Navigation"/>
         </methods>
       </class> <!-- INT.E2EProject.SmokeTest -->
     </classes>
   </test> <!-- Smoke(failed) -->
+  <test thread-count="5" name="Costs(failed)">
+    <classes>
+      <class name="INT.E2EProject.CostsTest">
+        <methods>
+          <include name="create"/>
+          <include name="DriverQuit"/>
+          <include name="setUp"/>
+          <include name="SignIn"/>
+        </methods>
+      </class> <!-- INT.E2EProject.CostsTest -->
+    </classes>
+  </test> <!-- Costs(failed) -->
 </suite> <!-- Failed suite [Suite] -->

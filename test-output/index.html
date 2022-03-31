@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Anshuma\eclipse-workspaceNew\E2EProject\testng.xml</span>
+                    <span>C:\Users\Anshuma\GitDemo\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,  2 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,10 +104,34 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="INT.E2EProject.SmokeTest" class="method navigator-link" hash-for-method="Navigation">Navigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="INT.E2EProject.SmokeTest" class="method navigator-link" hash-for-method="SOCreation">SOCreation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="INT.E2EProject.CostsTest" class="method navigator-link" hash-for-method="SignIn(anshuma-int, password@00, Correct user is loged in)">SignIn(anshuma-int, password@00, Correct user is loged in)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="INT.E2EProject.CostsTest" class="method navigator-link" hash-for-method="create">create</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,22 +142,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="INT.E2EProject.SmokeTest" class="method navigator-link" hash-for-method="Navigation">Navigation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="INT.E2EProject.SmokeTest" class="method navigator-link" hash-for-method="SignIn(anshuma-int, password@00, Correct user is loged in)">SignIn(anshuma-int, password@00, Correct user is loged in)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="INT.E2EProject.CostsTest" class="method navigator-link" hash-for-method="SignIn(anshuma-int, password@00, Correct user is loged in)">SignIn(anshuma-int, password@00, Correct user is loged in)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="INT.E2EProject.CostsTest" class="method navigator-link" hash-for-method="create">create</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -161,18 +170,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SOCreation">
-                  </a> <!-- SOCreation -->
-                  <span class="method-name">SOCreation</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=99.0.4844.82)
+                  <a name="Navigation">
+                  </a> <!-- Navigation -->
+                  <span class="method-name">Navigation</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[ng-reflect-message=&quot;Create&quot;]&quot;}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;LOVE&apos;, ip: &apos;192.168.29.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b14ce2c092182431f27cc4aafe55010c, clickElement {id=f0a1a8e1-2dca-41be-a8bd-14a3fecd3c32}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Anshuma\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63605}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63605/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b14ce2c092182431f27cc4aafe55010c)] -&gt; xpath: //table//tr[3]//td[2]//button]
-Session ID: b14ce2c092182431f27cc4aafe55010c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Anshuma\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62160}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62160/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d891b8d0c99de641fc3abaf1e06e5ce4
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -180,19 +188,53 @@ Session ID: b14ce2c092182431f27cc4aafe55010c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at INT.E2EProject.SmokeTest.SOCreation(SmokeTest.java:130)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageObejcts.Socreation.FAB(Socreation.java:35)
+	at INT.E2EProject.SmokeTest.Navigation(SmokeTest.java:120)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SOCreation">
+                  </a> <!-- SOCreation -->
+                  <span class="method-name">SOCreation</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[ng-reflect-message=&quot;Create&quot;]&quot;}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;LOVE&apos;, ip: &apos;192.168.29.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Anshuma\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62160}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62160/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d891b8d0c99de641fc3abaf1e06e5ce4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageObejcts.Socreation.FAB(Socreation.java:35)
+	at INT.E2EProject.SmokeTest.SOCreation(SmokeTest.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">INT.E2EProject.CostsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -202,6 +244,16 @@ Session ID: b14ce2c092182431f27cc4aafe55010c
                   </a> <!-- SignIn(anshuma-int, password@00, Correct user is loged in) -->
                   <span class="method-name">SignIn</span>
                   <span class="parameters">(anshuma-int, password@00, Correct user is loged in)</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: pageObejcts/Costs
+	at INT.E2EProject.CostsTest.setUp(CostsTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: pageObejcts.Costs
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 27 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -209,23 +261,26 @@ Session ID: b14ce2c092182431f27cc4aafe55010c
                   <a name="create">
                   </a> <!-- create -->
                   <span class="method-name">create</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: pageObejcts/Costs
+	at INT.E2EProject.CostsTest.setUp(CostsTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: pageObejcts.Costs
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 27 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">INT.E2EProject.SmokeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Navigation">
-                  </a> <!-- Navigation -->
-                  <span class="method-name">Navigation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="SignIn(anshuma-int, password@00, Correct user is loged in)">
@@ -246,7 +301,7 @@ Session ID: b14ce2c092182431f27cc4aafe55010c
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Anshuma\eclipse-workspaceNew\E2EProject\testng.xml</span>
+            <span class="header-content">C:\Users\Anshuma\GitDemo\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -308,34 +363,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SOCreation')
+data.setCell(0, 1, 'Navigation')
 data.setCell(0, 2, 'INT.E2EProject.SmokeTest')
-data.setCell(0, 3, 101782);
+data.setCell(0, 3, 117637);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Navigation')
+data.setCell(1, 1, 'SOCreation')
 data.setCell(1, 2, 'INT.E2EProject.SmokeTest')
-data.setCell(1, 3, 35645);
+data.setCell(1, 3, 100205);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'create')
-data.setCell(2, 2, 'INT.E2EProject.CostsTest')
-data.setCell(2, 3, 32467);
+data.setCell(2, 1, 'SignIn')
+data.setCell(2, 2, 'INT.E2EProject.SmokeTest')
+data.setCell(2, 3, 290);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'SignIn')
-data.setCell(3, 2, 'INT.E2EProject.CostsTest')
-data.setCell(3, 3, 217);
+data.setCell(3, 1, 'logs')
+data.setCell(3, 2, 'INT.E2EProject.SmokeTest')
+data.setCell(3, 3, 24);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'SignIn')
-data.setCell(4, 2, 'INT.E2EProject.SmokeTest')
-data.setCell(4, 3, 166);
+data.setCell(4, 2, 'INT.E2EProject.CostsTest')
+data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'logs')
-data.setCell(5, 2, 'INT.E2EProject.SmokeTest')
-data.setCell(5, 3, 18);
+data.setCell(5, 1, 'create')
+data.setCell(5, 2, 'INT.E2EProject.CostsTest')
+data.setCell(5, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -368,44 +423,48 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">SignIn(anshuma-int, password@00, Correct user is loged in)</span>
-                <span class="method-start">11914 ms</span>
+                <span class="method-start">15797 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Navigation</span>
-                <span class="method-start">12086 ms</span>
+                <span class="method-start">16094 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">SOCreation</span>
-                <span class="method-start">47742 ms</span>
+                <span class="method-start">134281 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logs</span>
-                <span class="method-start">149737 ms</span>
+                <span class="method-start">234796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">DriverQuit</span>
-                <span class="method-start">149759 ms</span>
+                <span class="method-start">234823 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">INT.E2EProject.CostsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">150557 ms</span>
+                <span class="method-start">235933 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">SignIn(anshuma-int, password@00, Correct user is loged in)</span>
-                <span class="method-start">155417 ms</span>
+                <span class="method-start">243677 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">create</span>
-                <span class="method-start">155637 ms</span>
+                <span class="method-start">243683 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">DriverQuit</span>
-                <span class="method-start">188107 ms</span>
+                <span class="method-start">243685 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
